@@ -1,0 +1,21 @@
+{
+    "name": "truth4oll/dadata-api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Pavel Averyanov",
+        "email": "truth4oll@gmail.com",
+        "homepage": "https://github.com/truth4oll"
+      }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2-httpclient": "~2.0.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "truth4oll\\dadata\\": "src/"
+      }
+    }
+}
