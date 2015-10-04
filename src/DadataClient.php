@@ -40,6 +40,19 @@ class DadataClient
     }
 
     /**
+     * @param string $address
+     * @return CleanAddress
+     */
+    public function suggestFias($fias)
+    {
+        $data = $this->query('findById/address', ['query' => $fias]);
+        if (isset($data['suggestions'][0])) {
+            return new CleanAddress($data['suggestions'][0]['data']);
+        }
+        return false;
+    }
+
+    /**
      * @param $name
      * @return null|CleanName
      */
